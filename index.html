@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Forms dan Links</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h3>DASHBOARD</h3>
+        </div>
+        <div class="clock">
+            <p id="time"></p>
+        </div>
+       
+    </header>
+    <section>
+        <div class="moving-text">
+            PDW8_20220140036
+        </div>
+        <div class="moving-text2">
+            TI UMY
+        </div>
+        <div class="centered-image">
+            <img src="asset/download.jpg" alt="FRZ">
+        </div>
+        <p><strong>MUHAMMAD FARRAS MAS'UD</strong></p>
+        <div class="btn">
+            <a href="form.html" class="pendaftaran">Form</a>
+            <a href="aboutme.html" class="pendaftaran">About Me</a>
+            <a href="hobby.html" class="pendaftaran">Hobby</a>
+        </div>
+        <div class="welcome">
+            <p>Hello, I am Farras</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 muhammad.farras.ft22@mail.umy.ac.id. All rights reserved.</p>
+        <p>Created by Farras</p>
+    </footer>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            const dateString = now.toLocaleDateString();
+            document.getElementById('time').textContent = timeString;
+            document.getElementById('date').textContent = dateString;
+        }
+        setInterval(updateTime, 1000);
+        updateTime(); 
+    </script>
+</body>
+</html>
